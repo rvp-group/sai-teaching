@@ -60,7 +60,9 @@ section + section, .section-divider{border-top:1px solid var(--border);}
   min-height:clamp(320px,40vw,420px);
   display:flex; flex-direction:column; justify-content:flex-end;
   background:linear-gradient(155deg,var(--navy-1) 0%,#0a1f30 55%,var(--navy-2) 100%);
-  background-image:url('figures/spatial_ai_banner.svg');
+  background-image:
+    linear-gradient(to top, rgba(6,18,30,.85) 0%, rgba(6,18,30,.55) 45%, rgba(6,18,30,.35) 100%),
+    url('figures/spatial_ai_banner.svg');
   background-size:cover; background-position:center;
   /* Swap the SVG for a photo by pointing this at e.g. figures/hero.jpg */
 }
