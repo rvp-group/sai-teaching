@@ -82,6 +82,7 @@ section + section, .section-divider{border-top:1px solid var(--border);}
 .fact:last-child{border-right:0;}
 .fact__k{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted-soft);}
 .fact__v{margin-top:6px;font-size:18px;font-weight:600;}
+.fact__sub{display:block;margin-top:3px;font-family:var(--mono);font-size:12px;font-weight:400;color:var(--muted);}
 
 /* ---------- ABOUT ---------- */
 .about{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;margin-top:52px;}
@@ -136,6 +137,7 @@ section + section, .section-divider{border-top:1px solid var(--border);}
 .bar__fill{height:100%;background:var(--blue);border-radius:99px;}
 .exam{border:1px solid var(--border);border-radius:12px;background:#fff;padding:22px;}
 .exam p{margin-top:0;font-size:15px;line-height:1.65;color:#3f4856;}
+.exam p + p{margin-top:14px;}
 
 /* ---------- ASSIGNMENTS ---------- */
 .assign{border:1px solid var(--border);border-radius:12px;background:#fff;padding:22px;display:flex;flex-direction:column;}
