@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spatial AI — Elective in Artificial Intelligence</title>
+<meta name="description" content="Spatial AI — 3 CFU module of the Elective in Artificial Intelligence, DIAG, Sapienza University of Rome.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <div class="wrap nav__inner">
+    <a href="#top" class="brand">
+      <span class="brand__mark"></span>
+      <span class="brand__name">Spatial AI</span>
+    </a>
+    <div class="nav__links">
+      <a href="#overview">Overview</a>
+      <a href="#logistics">Logistics</a>
+      <a href="#staff">Staff</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#grading">Grading</a>
+      <a href="#assignments">Assignments</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO / OVERVIEW ===== -->
+<section id="overview">
+  <div class="wrap hero-wrap" id="top">
+    <!-- HERO: Spatial AI banner SVG (figures/banner.svg). To use a photo, see .hero in styles.css -->
+    <div class="hero">
+      <div class="hero__inner">
+        <span class="hero__eyebrow">Elective in Artificial Intelligence · 3 CFU module</span>
+        <h1>Spatial AI</h1>
+        <p class="hero__desc">How machines perceive, reconstruct, and reason about the 3D world — from classical geometry and image formation, through modern neural rendering (NeRF and 3D Gaussian Splatting), to lifting semantics into 3D and agents that act through world models.</p>
+      </div>
+    </div>
+
+    <!-- KEY FACTS -->
+    <div class="facts">
+      <div class="fact"><div class="fact__k">Credits</div><div class="fact__v">3 CFU</div></div>
+      <div class="fact"><div class="fact__k">Hours</div><div class="fact__v">~36 h</div></div>
+      <div class="fact"><div class="fact__k">Level</div><div class="fact__v">MSc</div></div>
+      <div class="fact"><div class="fact__k">Language</div><div class="fact__v">English</div></div>
+      <div class="fact"><div class="fact__k">Semester</div><div class="fact__v">A.Y. 2026/27 <br> Oct - mid Nov</div></div>
+    </div>
+
+    <!-- ABOUT + OUTCOMES -->
+    <div class="about">
+      <div>
+        <div class="eyebrow" style="margin-bottom:12px;">About this module</div>
+        <p>This module follows a single thread: turning 2D observations into structured, queryable, and actionable 3D. 
+           We begin with how images are formed and the classical ways of representing 3D geometry, move through depth estimation and multi-view reconstruction and state estimation (Structure-from-Motion and SLAM), 
+           and then into the neural rendering methods: volumetric fields, NeRF, and 3D Gaussian Splatting, that now define the field.</p>
+        <p>The final weeks lift language and semantics into these 3D representations for open-set queries, and connect perception to action through active perception and world models. 
+           Teaching combines lectures with hands-on practicals: PyTorch3D, COLMAP, NeRFStudio, language-embedded Gaussians, and a DreamerV3 agent, and the module is assessed through a short quiz and an end-to-end group project. 
+           It is one module of the 12 CFU Elective in Artificial Intelligence.</p>
+      </div>
+      <div>
+        <div class="eyebrow" style="margin-bottom:12px;">What you'll learn</div>
+        <ul class="outcomes">
+          <li>Represent 3D scenes with point clouds, meshes, voxels, implicit fields, and Gaussians, and reason about the geometry of image formation.</li>
+          <li>Reconstruct geometry from images: monocular and multi-view depth, Structure-from-Motion, and SLAM.</li>
+          <li>Build and train neural rendering pipelines: volume rendering, NeRF, and 3D Gaussian Splatting, and weigh their trade-offs.</li>
+          <li>Lift 2D semantics into 3D for open-set queries, and connect perception to action with active perception and world models.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOGISTICS ===== -->
+<section id="logistics">
+  <div class="wrap section-pad">
+    <div class="sec-head"><span class="sec-bar"></span><h2>Logistics</h2></div>
+    <div class="cards cards--3">
+      <div class="card">
+        <div class="card__k">Lectures</div>
+        <div class="card__v">3 days / week</div>
+        <div class="card__sub">Days · 00:00–00:00 TBD</div>
+      </div>
+      <div class="card">
+        <div class="card__k">Room</div>
+        <div class="card__v">Room TBD</div>
+        <div class="card__sub">Via Ariosto 25</div>
+      </div>
+      <div class="card">
+        <div class="card__k">Office hours</div>
+        <div class="card__v">By appointment</div>
+        <div class="card__sub">Day · time TBD</div>
+      </div>
+      <!-- <div class="card">
+        <div class="card__k">Contact</div>
+        <div class="card__v">Teacher name</div>
+        <div class="card__sub"><a href="mailto:digiammarino@diag.uniroma1.it">digiammarino[at]diag.uniroma1.it</a><br><a href="mailto:giacomini@diag.uniroma1.it">giacomini[at]diag.uniroma1.it</a></div>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEACHING STAFF ===== -->
+<section id="staff">
+  <div class="wrap section-pad">
+    <div class="sec-head"><span class="sec-bar"></span><h2>Teaching staff</h2></div>
+    <div class="staff">
+      <div class="person">
+        <img class="person__photo" src="figures/luca.png" alt="Luca Di Giammarino"
+             onerror="this.classList.add('person__photo--ph');this.removeAttribute('src');this.alt='';">
+        <div class="person__name">Luca Di Giammarino</div>
+        <!-- <div class="person__role">Module lead · Instructor</div> -->
+        <div class="person__mail"><a href="mailto:digiammarino@diag.uniroma1.it">digiammarino[at]diag.uniroma1.it</a></div>
+      </div>
+      <div class="person">
+        <img class="person__photo" src="figures/ema.jpeg" alt="Emanuele Giacomini"
+             onerror="this.classList.add('person__photo--ph');this.removeAttribute('src');this.alt='';">
+        <div class="person__name">Emanuele Giacomini</div>
+        <!-- <div class="person__role">Instructor</div> -->
+        <div class="person__mail"><a href="mailto:giacomini@diag.uniroma1.it">giacomini[at]diag.uniroma1.it</a></div>
+      </div>
+      <!-- <div class="person">
+        <div class="person__photo person__photo--ph">photo</div>
+        <div class="person__name">To be announced</div>
+        <div class="person__role">Guest lecturer</div>
+        <div class="person__mail"><span class="dash">—</span></div>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== SCHEDULE ===== -->
+<section id="schedule">
+  <div class="wrap section-pad">
+    <div class="sec-head"><span class="sec-bar"></span><h2>Schedule</h2></div>
+    <p class="note">Six weeks, three sessions per week, with a hands-on practical each week. Slides are linked as <code>PDF</code> after each lecture.</p>
+
+    <div class="table">
+      <!-- header -->
+      <div class="row row--head">
+        <div>#</div><div>Date</div><div>Topic</div><div>Slides</div><div>Suggested Reading</div><div>Practicals</div>
+      </div>
+
+      <!-- WEEK 1 -->
+      <div class="week">Week 1 · Foundations &amp; 3D representations</div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">01</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">Introduction &amp; course overview</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><span class="dash">—</span></div>
+        <div class="c-assign" data-label="Practicals"><span class="dash">—</span></div>
+      </div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">02</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">3D representations</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><span class="dash">—</span></div>
+        <div class="c-assign" data-label="Practicals"><span class="dash">—</span></div>
+      </div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">03</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">Image formation</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><span class="dash">—</span></div>
+        <div class="c-assign" data-label="Practicals">PyTorch3D</div>
+      </div>
+
+      <!-- WEEK 2 -->
+      <div class="week">Week 2 · Reconstruction: depth, SfM &amp; SLAM</div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">04</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">Single-view 3D (depth) &amp; LiDAR completion</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><a href="#">Eigen et al., Multi-Scale Depth (2014)</a><a href="#">Ranftl et al., MiDaS (2020)</a></div>
+        <div class="c-assign" data-label="Practicals"><span class="dash">—</span></div>
+      </div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">05</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">Multi-view depth estimation &amp; MVS</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><span class="dash">—</span></div>
+        <div class="c-assign" data-label="Practicals"><span class="dash">—</span></div>
+      </div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">06</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">Structure-from-Motion &amp; SLAM</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><a href="#">Schönberger &amp; Frahm, COLMAP (2016)</a></div>
+        <div class="c-assign" data-label="Practicals">Synthetic SfM in Python · Home: COLMAP + a neural pipeline on 5 images</div>
+      </div>
+
+      <!-- WEEK 3 -->
+      <div class="week">Week 3 · Neural rendering I: fields &amp; NeRF</div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">07</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">Volume rendering</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><span class="dash">—</span></div>
+        <div class="c-assign" data-label="Practicals"><span class="dash">—</span></div>
+      </div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">08</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">Neural Radiance Fields (NeRF)</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><a href="#">Mildenhall et al., NeRF (2020)</a></div>
+        <div class="c-assign" data-label="Practicals"><span class="dash">—</span></div>
+      </div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">09</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">Neural implicit rendering</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><span class="dash">—</span></div>
+        <div class="c-assign" data-label="Practicals"><span class="dash">—</span></div>
+      </div>
+
+      <!-- WEEK 4 -->
+      <div class="week">Week 4 · Neural rendering II: Gaussian Splatting</div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">10</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">Differentiable primitive rendering</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><span class="dash">—</span></div>
+        <div class="c-assign" data-label="Practicals"><span class="dash">—</span></div>
+      </div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">11</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">Neural appearance modelling</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><span class="dash">—</span></div>
+        <div class="c-assign" data-label="Practicals"><span class="dash">—</span></div>
+      </div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">12</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">3D Gaussian Splatting with NeRFStudio</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><a href="#">Kerbl et al., 3D Gaussian Splatting (2023)</a></div>
+        <div class="c-assign" data-label="Practicals">3DGS with NeRFStudio (fill in a slow Python rasterizer)</div>
+      </div>
+
+      <!-- WEEK 5 -->
+      <div class="week">Week 5 · Semantics in 3D</div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">13</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">Lifting 2D semantics into 3D (feature / semantic fields)</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><a href="#">Kerr et al., LERF (2023)</a></div>
+        <div class="c-assign" data-label="Practicals"><span class="dash">—</span></div>
+      </div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">14</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">Semantics on explicit primitives (language-embedded Gaussians)</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><a href="#">Qin et al., LangSplat (2024)</a></div>
+        <div class="c-assign" data-label="Practicals">Language head on your 3DGS scene (LangSplat / CLIP distillation)</div>
+      </div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">15</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">From scenes to agents: open-set mapping &amp; 3D scene graphs</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><span class="dash">—</span></div>
+        <div class="c-assign" data-label="Practicals"><span class="dash">—</span></div>
+      </div>
+
+      <!-- WEEK 6 -->
+      <div class="week">Week 6 · Action &amp; world models</div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">16</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">Active perception: from passive to active</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><span class="dash">—</span></div>
+        <div class="c-assign" data-label="Practicals"><span class="dash">—</span></div>
+      </div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">17</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">World models: predicting the consequences of action</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><a href="#">Hafner et al., DreamerV3 (2023)</a></div>
+        <div class="c-assign" data-label="Practicals">DreamerV3 on a control task (visualize imagined vs. real rollouts)</div>
+      </div>
+      <div class="row row--body">
+        <div class="c-n" data-label="#">18</div>
+        <div class="c-date" data-label="Date">TBD</div>
+        <div class="c-topic" data-label="Topic">Closing the loop: prediction-driven action &amp; the generative frontier</div>
+        <div data-label="Slides"><span class="dash">—</span></div>
+        <div class="c-readings" data-label="Reading"><span class="dash">—</span></div>
+        <div class="c-assign" data-label="Practicals"><span class="dash">—</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GRADING ===== -->
+<section id="grading">
+  <div class="wrap section-pad">
+    <div class="sec-head"><span class="sec-bar"></span><h2>Grading &amp; exam</h2></div>
+    <div class="grade">
+      <div class="bars">
+        <div>
+          <div class="bar__top"><span class="bar__label">Quiz · 13 questions</span><span class="bar__pct">10 pts</span></div>
+          <div class="bar__track"><div class="bar__fill" style="width:33%;"></div></div>
+        </div>
+        <div>
+          <div class="bar__top"><span class="bar__label">Group project</span><span class="bar__pct">20 pts <span style="color:var(--blue,#1f6fb2);">+3 bonus</span></span></div>
+          <div class="bar__track"><div class="bar__fill" style="width:67%;"></div></div>
+        </div>
+      </div>
+      <div class="exam">
+        <div class="card__k" style="margin-bottom:10px;">Exam format</div>
+        <p>This 3 CFU module is assessed by a <strong>quiz</strong> (13 questions, max 10 points) and an end-to-end <strong>group project</strong> (max 20 points, with up to <strong>+3 bonus</strong> points for implementing a method from a paper or placing in the top 3 of the class leaderboard).</p>
+        <p>The project will be just built on the practical sessions.</p>
+        <p>The quiz is offered on the last day of lessons and again in the standard exam sessions. Projects can be presented in a 10-minute talk at the end of December or during standard exam periods. The module grade combines with the other modules of the 12 CFU Elective in Artificial Intelligence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ASSIGNMENTS ===== -->
+<!-- <section id="assignments">
+  <div class="wrap section-pad">
+    <div class="sec-head"><span class="sec-bar"></span><h2>Assignments &amp; project</h2></div>
+    <div class="cards cards--2">
+      <div class="assign">
+        <div class="assign__top"><span class="assign__title">Practical sessions</span><span class="assign__meta">One per week · graded as participation</span></div>
+        <p>Hands-on sessions running alongside the lectures: PyTorch3D, synthetic Structure-from-Motion, 3D Gaussian Splatting in NeRFStudio, a language head on your own 3DGS scene (LangSplat / CLIP distillation), and a DreamerV3 agent on a control task.</p>
+        <a class="btn btn--blue" href="#">Notebooks ↓</a>
+      </div>
+      <div class="assign">
+        <div class="assign__top"><span class="assign__title">Home exercise</span><span class="assign__meta">Week 2 · Due TBD</span></div>
+        <p>Run COLMAP and a neural reconstruction pipeline on a small capture of 5 images, and compare the recovered geometry. Builds directly on the synthetic SfM practical.</p>
+        <a class="btn btn--blue" href="#">Handout ↓</a>
+      </div>
+      <div class="assign">
+        <div class="assign__top"><span class="assign__title">Quiz</span><span class="assign__meta">Last day of lessons · max 10 pts</span></div>
+        <p>13 questions covering the full module. Offered on the last day of lessons and during exam sessions.</p>
+        <a class="btn btn--blue" href="#">Topics ↓</a>
+      </div>
+      <div class="assign assign--project">
+        <div class="assign__top"><span class="assign__title">Course project</span><span class="assign__meta">Teams · 10-min talk · max 20 pts +3</span></div>
+        <p>A group project carried from what we built in class. Up to +3 bonus points for implementing a method from a paper, or for placing in the top 3 of the class leaderboard. Reusing your own NeRFStudio / 3DGS captures is encouraged.</p>
+        <a class="btn btn--orange" href="#">Project brief ↓</a>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <span class="brand__mark"></span>
+      <span class="brand__name">Spatial AI</span>
+      <span class="footer__tag">· Elective in AI</span>
+    </div>
+    <div class="footer__legal">RVP-Group · DIAG · Sapienza Università di Roma<br>© 2026 · All rights reserved</div>
+  </div>
+</footer>
+
+</body>
+</html>

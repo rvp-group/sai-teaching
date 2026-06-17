@@ -1,0 +1,17 @@
+,1 day,2 day,3 day,practicals/home
+1 week - luca,Introduction,3D representation,Image formation,practical: pytorch 3d
+2 week - luca,Image Formation + Single-view 3D (Depth) + LiDAR completion,Multi-view Depth Estimation + MV Stereo,SfM + SLAM,practical: syntethic SfM python + home ex: run Colmap and neural one with 5 images
+3 week - ema,Volume rendering,Neural Radiance Fields,Neural Implicit Rendering,
+4 week - ema,Differentiable Primitive Renderings,Neural Appearance Modelling,3DGS w NeRF Studio,practical: 3DGS w NeRF Studio (with filling slow python rasterizer)
+5 week - ema/luca/valerio,Lifting 2D semantics into 3D (feature/semantic fields),Semantics on explicit primitives (language-embedded Gaussians),From scenes to agents: open-set mapping & 3D scene graphs (+ practical),"reuse the 3DGS scene the students built in your Week 4 NeRFStudio practical and bolt a language head onto it — run LangSplat (or a lightweight CLIP-feature distillation) and do text queries like ""find the keyboard."" That gives continuity with their own data and needs no new capture."
+6 week - suca/kri,Active perception: from passive to active,World models: predicting the consequences of action,Closing the loop: prediction-driven action + the generative frontier + quiz,practical: run a DreamerV3 agent on a simple control task (DMC/Gym) and visualize its imagined rollouts next to the real ones
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+"exam:
+- quiz 13 domande (max 10 pp) / proposed last day of lesson / january / febraury / by appointinment
+- group project from beginning to end (max 20 pp) + 3 pp only who implements something from a paper or first 3 on leading table / presentation 10 mins / end of december / janaury / febraury / by appointment   
+",,,,
